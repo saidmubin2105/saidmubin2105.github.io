@@ -1,0 +1,8 @@
+Options -Indexes
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<FilesMatch "\.(lic|bin|txt)$">
+  Header set Cache-Control "no-cache"
+</FilesMatch>

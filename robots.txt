@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /ansortools/lic/
+Disallow: /ansortools/*.bin
+
+Sitemap: https://saidmubin2105.github.io/sitemap.xml
