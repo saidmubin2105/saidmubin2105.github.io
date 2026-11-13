@@ -57,14 +57,15 @@
                ]
 }
 </script>
+<script id="intro-js">try{if(!sessionStorage.getItem('ansorIntro')){document.documentElement.classList.add('has-intro');sessionStorage.setItem('ansorIntro','1')}}catch(e){}</script>
 </head>
 <body>
+<div id="intro" role="button" tabindex="0" aria-label="Enter the site"><img src="/assets/img/logo_oq.png" alt="" width="1196" height="996"><i></i></div>
 <header class="top">
   <div class="wrap">
     <a class="logo" href="/en/" aria-label="Ansor Loyiha — home"><img src="/assets/img/logo_480.png" alt="Ansor Loyiha" width="480" height="164"></a>
     <nav class="nav">
       <a href="#haqida">About</a>
-      <a href="#brend">Brand</a>
       <a href="#xizmatlar">Services</a>
       <a href="#loyihalar">Projects</a>
       <a href="/en/ansortools.html">AnsorTools</a>
@@ -76,19 +77,23 @@
 </header>
 
 <main>
-<section class="hero">
+<section class="hero hero-r">
   <div class="wrap">
     <div>
       <p class="eyebrow">Architectural design studio</p>
-      <h1>From concept to working drawings — one team</h1>
+      <h1><span class="w" style="--i:0">From</span> <span class="w" style="--i:1">concept</span> <span class="w" style="--i:2">to</span> <span class="w" style="--i:3">working</span> <span class="w" style="--i:4">drawings</span> <span class="w" style="--i:5">—</span> <span class="w g" style="--i:6">one</span> <span class="w g" style="--i:7">team</span></h1>
       <p class="lead">Ansor Loyiha delivers complete design packages for residential and public buildings: architecture, structures, water and sewerage, HVAC, electrical, interior design and cost estimates. Drawings to GOST and Uzbekistan’s ShNQ codes.</p>
       <div class="cta">
-        <a class="btn gold" href="#aloqa">Start a project</a>
+        <a class="btn gold" href="#aloqa" data-ariza>Start a project</a>
         <a class="btn ghost" href="#xizmatlar">Services</a>
       </div>
     </div>
     <img class="mark" src="/assets/img/logo_oq.png" alt="Ansor Loyiha mark — crescent and arch" width="1196" height="996">
   </div>
+</section>
+
+<section id="raqam">
+  <div class="wrap"><div class="rq"><div class="rq-i"><b data-to="100+">100+</b><span>completed projects</span></div><div class="rq-i"><b data-to="12">12</b><span>regions with our buildings — in Uzbekistan and abroad</span></div><div class="rq-i"><b data-to="12">12</b><span>design sections in one team</span></div><div class="rq-i"><b data-to="5">5</b><span>stages: from idea to supervision</span></div></div></div>
 </section>
 
 <section id="haqida">
@@ -100,11 +105,12 @@
       <p>Our main goal is to develop and deliver Uzbekistan’s social, economic and infrastructure projects to a high standard, efficiently and in line with current requirements.</p>
       <p>Our team of experienced engineers, architects and project managers takes an individual approach to every project. We work closely with government bodies, private companies and foreign investors; our projects span construction, education, healthcare, transport and utility infrastructure.</p>
       <div class="chips"><span>Design and engineering surveys</span><span>Technical supervision</span><span>Cost estimates</span><span>Project analysis</span><span>Consulting</span></div>
+      <a class="br-more" href="/en/brend.html">More about our brand &rarr;</a>
     </div>
     <div>
       <div class="stats">
-        <div><b>8</b><span>regions with projects</span></div>
-        <div><b>50+</b><span>projects</span></div>
+        <div><b>12</b><span>regions, incl. abroad</span></div>
+        <div><b>100+</b><span>projects</span></div>
         <div><b>ShNQ</b><span>and GOST</span></div>
       </div>
       <div class="aside">
@@ -115,69 +121,6 @@
           <li>Saving time and money through innovative technology</li>
           <li>Running a hands-on training school for young specialists</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="brend">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Brand</p>
-      <h2>What our mark means</h2>
-      <p class="lead" style="margin-top:14px">The Ansor Loyiha brand blends Eastern architecture with contemporary design: the name, the shape and the colors each carry a meaning.</p>
-    </div>
-    <p class="swipe-hint">Swipe</p>
-    <div class="br-story">
-      <article class="br-card">
-        <img src="/assets/img/brend/logotip.jpg" alt="Ansor Loyiha logo: crescent, arch and the “Ansor Loyiha” wordmark" width="1200" height="849" loading="lazy">
-        <div class="br-tx"><span class="br-num">01 · NAME</span><h3>“Ansor” — the helper</h3><p>From the Arabic al-Ansar, meaning “helper” or “supporter”.</p></div>
-      </article>
-      <article class="br-card">
-        <img src="/assets/img/brend/yarim-oy.jpg" alt="The crescent symbol and its construction" width="1200" height="849" loading="lazy">
-        <div class="br-tx"><span class="br-num">02 · CRESCENT</span><h3>A symbol of the East</h3><p>A common symbol in Eastern culture and Islamic art, crowning minarets and domes.</p></div>
-      </article>
-      <article class="br-card">
-        <img src="/assets/img/brend/ravoq.jpg" alt="The mark’s arch against the arches of the Registan" width="1200" height="849" loading="lazy">
-        <div class="br-tx"><span class="br-num">03 · ARCH</span><h3>Timurid architecture</h3><p>The arch recalls Timurid-era buildings and is inspired by the arches of the Registan.</p></div>
-      </article>
-    </div>
-    <div class="br-formula">
-      <img src="/assets/img/brend/belgi-tuzilishi.jpg" alt="How the mark is built: a crescent and an arch combine into the Ansor Loyiha mark" width="1200" height="849" loading="lazy">
-      <div><h3>Crescent + arch = the mark</h3><p>Together the two shapes form the Ansor Loyiha mark: Eastern tradition and architectural form in a single symbol.</p></div>
-    </div>
-    <div class="br-row">
-      <div class="br-box">
-        <h3>Colors</h3>
-        <p>The core palette: deep navy, teal and sky blue, gold and orange.</p>
-        <div class="br-sw">
-          <div><i style="background:#093146"></i><b>Navy</b><code>#093146</code></div>
-          <div><i style="background:#1B9CB9"></i><b>Teal</b><code>#1B9CB9</code></div>
-          <div><i style="background:#8CC8E5"></i><b>Sky blue</b><code>#8CC8E5</code></div>
-          <div><i style="background:#F9B517"></i><b>Gold</b><code>#F9B517</code></div>
-          <div><i style="background:#EF8215"></i><b>Orange</b><code>#EF8215</code></div>
-        </div>
-      </div>
-      <div class="br-box">
-        <h3>Typeface: Khodijah</h3>
-        <p>An Arabic-style display typeface whose letters look drawn with a broad-nib pen. Used in the logo and headings.</p>
-        <img src="/assets/img/brend/shrift.jpg" alt="The Khodijah typeface: name, upper and lower case, numerals" width="1200" height="459" loading="lazy">
-      </div>
-    </div>
-    <div class="br-two">
-      <div class="br-box">
-        <h3>Pattern</h3>
-        <p>An Eastern geometric pattern in the brand colors, used on stationery, advertising and site backgrounds.</p>
-        <img src="/assets/img/brend/naqsh.jpg" alt="Ansor Loyiha geometric pattern in the brand colors" width="1200" height="849" loading="lazy">
-      </div>
-      <div class="br-box">
-        <h3>The brand in use</h3>
-        <p>From the facade sign to stationery and apparel, the same mark and colors everywhere.</p>
-        <div class="br-mock">
-          <figure><img src="/assets/img/brend/maket-fasad.jpg" alt="Ansor Loyiha lettering on a glass facade" width="900" height="636" loading="lazy"><figcaption>Facade</figcaption></figure>
-          <figure><img src="/assets/img/brend/maket-ofis.jpg" alt="Ansor Loyiha mark on an office wall" width="900" height="637" loading="lazy"><figcaption>Office</figcaption></figure>
-          <figure><img src="/assets/img/brend/maket-blanklar.jpg" alt="Ansor Loyiha stationery set: letterhead, envelope, business card, stamp" width="900" height="636" loading="lazy"><figcaption>Stationery</figcaption></figure>
-          <figure><img src="/assets/img/brend/maket-futbolka.jpg" alt="T-shirt with the Ansor Loyiha mark" width="900" height="636" loading="lazy"><figcaption>Apparel</figcaption></figure>
-        </div>
       </div>
     </div>
   </div>
@@ -225,6 +168,7 @@
   </div>
 </section>
 
+<div class="mega" aria-hidden="true"><div class="mega-t"><span class="f">IDEA</span><span class="d">✦</span><span class="o">DESIGN</span><span class="d">✦</span><span class="f">DRAWINGS</span><span class="d">✦</span><span class="o">SUPERVISION</span><span class="d">✦</span><span class="f">IDEA</span><span class="d">✦</span><span class="o">DESIGN</span><span class="d">✦</span><span class="f">DRAWINGS</span><span class="d">✦</span><span class="o">SUPERVISION</span><span class="d">✦</span></div></div>
 <section id="tarkib" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
@@ -264,19 +208,21 @@
         <dl class="feat-f"><div><dt>Floors</dt><dd>9</dd></div><div><dt>Site area</dt><dd>5,462 m²</dd></div><div><dt>Parking</dt><dd>40 spaces</dd></div><div><dt>Client</dt><dd>Mardonbovo LLC</dd></div><div><dt>Architect</dt><dd>Ansor Loyiha LLC</dd></div></dl>
         <div class="feat-th"><a href="/assets/loyihalar/qurilish/m02.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm02.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m03.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm03.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m04.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm04.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m05.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm05.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m06.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm06.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m07.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm07.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m08.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm08.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m09.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm09.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m10.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm10.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m11.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm11.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/qurilish/m12.jpg" data-lb><img src="/assets/loyihalar/qurilish/tm12.jpg" alt="Multi-storey residential buildings with retail and services — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div>
       </div>
-      <div class="feat-ar"><h4>Samples from the architecture section · working drawings, 74 sheets</h4><div class="feat-ar-g"><a href="/assets/loyihalar/qurilish/ar01.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar01.jpg" alt="3D overall view — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>3D overall view</span></a><a href="/assets/loyihalar/qurilish/ar02.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar02.jpg" alt="3D view from the courtyard — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>3D view from the courtyard</span></a><a href="/assets/loyihalar/qurilish/ar03.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar03.jpg" alt="Main elevation — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Main elevation</span></a><a href="/assets/loyihalar/qurilish/ar04.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar04.jpg" alt="Side elevation — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Side elevation</span></a><a href="/assets/loyihalar/qurilish/ar05.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar05.jpg" alt="Section 2-2 — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Section 2-2</span></a><a href="/assets/loyihalar/qurilish/ar06.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar06.jpg" alt="Apartment plan, floors 4–6 — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Apartment plan, floors 4–6</span></a></div></div>
+      <div class="feat-ar"><button type="button" class="ar-open"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h12l4 4v12H4z"/><path d="M8 12h8M8 16h8M8 8h5"/></svg>View architecture drawings <em>6</em></button><small>Samples from the architecture section · working drawings, 74 sheets</small>
+        <div class="ar-modal" hidden role="dialog" aria-modal="true" aria-label="Samples from the architecture section · working drawings, 74 sheets"><div class="ar-box"><button type="button" class="ar-x" aria-label="Close">&times;</button><h4>Samples from the architecture section · working drawings, 74 sheets</h4><div class="feat-ar-g"><a href="/assets/loyihalar/qurilish/ar01.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar01.jpg" alt="3D overall view — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>3D overall view</span></a><a href="/assets/loyihalar/qurilish/ar02.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar02.jpg" alt="3D view from the courtyard — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>3D view from the courtyard</span></a><a href="/assets/loyihalar/qurilish/ar03.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar03.jpg" alt="Main elevation — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Main elevation</span></a><a href="/assets/loyihalar/qurilish/ar04.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar04.jpg" alt="Side elevation — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Side elevation</span></a><a href="/assets/loyihalar/qurilish/ar05.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar05.jpg" alt="Section 2-2 — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Section 2-2</span></a><a href="/assets/loyihalar/qurilish/ar06.jpg" data-lb><img src="/assets/loyihalar/qurilish/tar06.jpg" alt="Apartment plan, floors 4–6 — Multi-storey residential buildings with retail and services" width="520" height="370" loading="lazy"><span>Apartment plan, floors 4–6</span></a></div></div></div>
+      </div>
     </article><!--/feat-->
     <p class="swipe-hint">Swipe</p>
     <div class="grid g3">
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/samarkand-city.jpg" alt="Samarkand city SXF — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Samarkand city SXF</h3><p>Samarkand</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/bibishox.jpg" alt="Bibishox TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Bibishox TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/dostlik.jpg" alt="Do‘stlik TXT — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Do‘stlik TXT</h3><p>Zaamin district, Jizzakh region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/nukus-avenue.jpg" alt="Nukus Avenue — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Nukus Avenue</h3><p>Tashkent</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/nurafshon.jpg" alt="Nurafshon TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Nurafshon TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/surxon-city.jpg" alt="Surxon city TXT — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Surxon city TXT</h3><p>Termez, Surkhandarya region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/zamin-urgut.jpg" alt="Zamin Urgut TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Zamin Urgut TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/navruz-avenue.jpg" alt="Navruz Avenue TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Navruz Avenue TXT</h3><p>Jizzakh</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
-      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/baraka.jpg" alt="Baraka — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Baraka</h3><p>Gulistan, Syrdarya region</p><a class="pcta" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/samarkand-city.jpg" alt="Samarkand city SXF — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Samarkand city SXF</h3><p>Samarkand</p><a class="pcta" data-ariza data-loyiha="Samarkand city SXF" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/bibishox.jpg" alt="Bibishox TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Bibishox TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" data-ariza data-loyiha="Bibishox TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/dostlik.jpg" alt="Do‘stlik TXT — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Do‘stlik TXT</h3><p>Zaamin district, Jizzakh region</p><a class="pcta" data-ariza data-loyiha="Do‘stlik TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/nukus-avenue.jpg" alt="Nukus Avenue — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Nukus Avenue</h3><p>Tashkent</p><a class="pcta" data-ariza data-loyiha="Nukus Avenue" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/nurafshon.jpg" alt="Nurafshon TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Nurafshon TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" data-ariza data-loyiha="Nurafshon TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/surxon-city.jpg" alt="Surxon city TXT — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Surxon city TXT</h3><p>Termez, Surkhandarya region</p><a class="pcta" data-ariza data-loyiha="Surxon city TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/zamin-urgut.jpg" alt="Zamin Urgut TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Zamin Urgut TXT</h3><p>Urgut district, Samarkand region</p><a class="pcta" data-ariza data-loyiha="Zamin Urgut TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/navruz-avenue.jpg" alt="Navruz Avenue TXT — Ansor Loyiha project" width="1200" height="703" loading="lazy"></div><div class="tx"><h3>Navruz Avenue TXT</h3><p>Jizzakh</p><a class="pcta" data-ariza data-loyiha="Navruz Avenue TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
+      <article class="proj"><div class="ph"><span class="pbadge">Under construction</span><img src="/assets/loyihalar/baraka.jpg" alt="Baraka — Ansor Loyiha project" width="1200" height="700" loading="lazy"></div><div class="tx"><h3>Baraka</h3><p>Gulistan, Syrdarya region</p><a class="pcta" data-ariza data-loyiha="Baraka" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Order a similar project &rarr;</a></div></article>
     </div>
     <p class="note">SXF and TXT are abbreviations in the developers’ company names. Construction of the buildings shown is already under way.</p>
   </div>
@@ -299,12 +245,76 @@
         <div class="np-tx"><h3>Office building</h3><div class="np-th"><a href="/assets/loyihalar/yangi/f02.jpg" data-lb><img src="/assets/loyihalar/yangi/tf02.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/f03.jpg" data-lb><img src="/assets/loyihalar/yangi/tf03.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/f04.jpg" data-lb><img src="/assets/loyihalar/yangi/tf04.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/f05.jpg" data-lb><img src="/assets/loyihalar/yangi/tf05.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/f06.jpg" data-lb><img src="/assets/loyihalar/yangi/tf06.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/f07.jpg" data-lb><img src="/assets/loyihalar/yangi/tf07.jpg" alt="Office building — Ansor Loyiha" width="600" height="338" loading="lazy"></a></div></div>
       </article>
       <article class="np">
-        <a class="np-cover" href="/assets/loyihalar/yangi/v01.jpg" data-lb><img src="/assets/loyihalar/yangi/tv01.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="pbadge np-b">In progress</span><span class="np-n">10 renders</span></a>
-        <div class="np-tx"><h3>Mixed-use residential complex</h3><p>Mirabad district, Tashkent</p><p class="np-d">Concept design, 2026. 6.28 ha site · ≈1,764 apartments · 167,054 m² of residential space. Two 16-story towers rising from a retail podium, an inner courtyard, a school and a kindergarten, solar panels on the roofs.</p><div class="np-th"><a href="/assets/loyihalar/yangi/v02.jpg" data-lb><img src="/assets/loyihalar/yangi/tv02.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v03.jpg" data-lb><img src="/assets/loyihalar/yangi/tv03.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v04.jpg" data-lb><img src="/assets/loyihalar/yangi/tv04.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v05.jpg" data-lb><img src="/assets/loyihalar/yangi/tv05.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v06.jpg" data-lb><img src="/assets/loyihalar/yangi/tv06.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v07.jpg" data-lb><img src="/assets/loyihalar/yangi/tv07.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v08.jpg" data-lb><img src="/assets/loyihalar/yangi/tv08.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v09.jpg" data-lb><img src="/assets/loyihalar/yangi/tv09.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v10.jpg" data-lb><img src="/assets/loyihalar/yangi/tv10.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a></div></div>
+        <a class="np-cover" href="/assets/loyihalar/yangi/v01.jpg" data-lb><img src="/assets/loyihalar/yangi/tv01.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="pbadge np-b">In progress</span><span class="np-n">14 renders</span></a>
+        <div class="np-tx"><h3>Mixed-use residential complex</h3><p>Mirabad district, Tashkent</p><p class="np-d">Concept design, 2026. 6.28 ha site · ≈1,764 apartments · 167,054 m² of residential space. Two 16-story towers rising from a retail podium, an inner courtyard, a school and a kindergarten, solar panels on the roofs.</p><div class="np-th"><a href="/assets/loyihalar/yangi/v02.jpg" data-lb><img src="/assets/loyihalar/yangi/tv02.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v03.jpg" data-lb><img src="/assets/loyihalar/yangi/tv03.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v04.jpg" data-lb><img src="/assets/loyihalar/yangi/tv04.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v05.jpg" data-lb><img src="/assets/loyihalar/yangi/tv05.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v06.jpg" data-lb><img src="/assets/loyihalar/yangi/tv06.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v07.jpg" data-lb><img src="/assets/loyihalar/yangi/tv07.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v08.jpg" data-lb><img src="/assets/loyihalar/yangi/tv08.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v09.jpg" data-lb><img src="/assets/loyihalar/yangi/tv09.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v10.jpg" data-lb><img src="/assets/loyihalar/yangi/tv10.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v11.jpg" data-lb><img src="/assets/loyihalar/yangi/tv11.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v12.jpg" data-lb><img src="/assets/loyihalar/yangi/tv12.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v13.jpg" data-lb><img src="/assets/loyihalar/yangi/tv13.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/v14.jpg" data-lb><img src="/assets/loyihalar/yangi/tv14.jpg" alt="Mixed-use residential complex — Ansor Loyiha" width="600" height="338" loading="lazy"></a></div></div>
       </article>
       <article class="np">
         <a class="np-cover" href="/assets/loyihalar/yangi/l01.jpg" data-lb><img src="/assets/loyihalar/yangi/tl01.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="pbadge np-b">In progress</span><span class="np-n">10 renders</span></a>
         <div class="np-tx"><h3>Lutfikor Avenue</h3><div class="np-th"><a href="/assets/loyihalar/yangi/l02.jpg" data-lb><img src="/assets/loyihalar/yangi/tl02.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l03.jpg" data-lb><img src="/assets/loyihalar/yangi/tl03.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l04.jpg" data-lb><img src="/assets/loyihalar/yangi/tl04.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l05.jpg" data-lb><img src="/assets/loyihalar/yangi/tl05.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l06.jpg" data-lb><img src="/assets/loyihalar/yangi/tl06.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l07.jpg" data-lb><img src="/assets/loyihalar/yangi/tl07.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l08.jpg" data-lb><img src="/assets/loyihalar/yangi/tl08.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l09.jpg" data-lb><img src="/assets/loyihalar/yangi/tl09.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a><a href="/assets/loyihalar/yangi/l10.jpg" data-lb><img src="/assets/loyihalar/yangi/tl10.jpg" alt="Lutfikor Avenue — Ansor Loyiha" width="600" height="338" loading="lazy"></a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="albom" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Album</p>
+      <h2>Our project album</h2>
+      <p class="lead" style="margin-top:14px">Hover a card to cycle the renders. Click to enlarge and use the arrows to browse.</p>
+    </div>
+    <div class="np-grid alb-grid">
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a101.jpg" data-lb><img src="/assets/loyihalar/albom/ta101.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">13 renders</span></a>
+        <div class="np-tx"><h3>12-story residential complex</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a102.jpg" data-lb><img src="/assets/loyihalar/albom/ta102.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a103.jpg" data-lb><img src="/assets/loyihalar/albom/ta103.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a104.jpg" data-lb><img src="/assets/loyihalar/albom/ta104.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a105.jpg" data-lb><img src="/assets/loyihalar/albom/ta105.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a106.jpg" data-lb><img src="/assets/loyihalar/albom/ta106.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a107.jpg" data-lb><img src="/assets/loyihalar/albom/ta107.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a108.jpg" data-lb><img src="/assets/loyihalar/albom/ta108.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a109.jpg" data-lb><img src="/assets/loyihalar/albom/ta109.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a110.jpg" data-lb><img src="/assets/loyihalar/albom/ta110.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a111.jpg" data-lb><img src="/assets/loyihalar/albom/ta111.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a112.jpg" data-lb><img src="/assets/loyihalar/albom/ta112.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a113.jpg" data-lb><img src="/assets/loyihalar/albom/ta113.jpg" alt="12-story residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="12-story residential complex" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a201.jpg" data-lb><img src="/assets/loyihalar/albom/ta201.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">11 renders</span></a>
+        <div class="np-tx"><h3>Kindergarten</h3><p>Education</p><div class="np-th"><a href="/assets/loyihalar/albom/a202.jpg" data-lb><img src="/assets/loyihalar/albom/ta202.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a203.jpg" data-lb><img src="/assets/loyihalar/albom/ta203.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a204.jpg" data-lb><img src="/assets/loyihalar/albom/ta204.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a205.jpg" data-lb><img src="/assets/loyihalar/albom/ta205.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a206.jpg" data-lb><img src="/assets/loyihalar/albom/ta206.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a207.jpg" data-lb><img src="/assets/loyihalar/albom/ta207.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a208.jpg" data-lb><img src="/assets/loyihalar/albom/ta208.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a209.jpg" data-lb><img src="/assets/loyihalar/albom/ta209.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a210.jpg" data-lb><img src="/assets/loyihalar/albom/ta210.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a211.jpg" data-lb><img src="/assets/loyihalar/albom/ta211.jpg" alt="Kindergarten — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Kindergarten" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a601.jpg" data-lb><img src="/assets/loyihalar/albom/ta601.jpg" alt="Mixed-use tower — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">5 renders</span></a>
+        <div class="np-tx"><h3>Mixed-use tower</h3><p>Residential and retail</p><div class="np-th"><a href="/assets/loyihalar/albom/a602.jpg" data-lb><img src="/assets/loyihalar/albom/ta602.jpg" alt="Mixed-use tower — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a603.jpg" data-lb><img src="/assets/loyihalar/albom/ta603.jpg" alt="Mixed-use tower — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a604.jpg" data-lb><img src="/assets/loyihalar/albom/ta604.jpg" alt="Mixed-use tower — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a605.jpg" data-lb><img src="/assets/loyihalar/albom/ta605.jpg" alt="Mixed-use tower — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Mixed-use tower" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a701.jpg" data-lb><img src="/assets/loyihalar/albom/ta701.jpg" alt="Festival Mall TXT — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">3 renders</span></a>
+        <div class="np-tx"><h3>Festival Mall TXT</h3><p>Shopping mall · Samarkand region</p><div class="np-th"><a href="/assets/loyihalar/albom/a702.jpg" data-lb><img src="/assets/loyihalar/albom/ta702.jpg" alt="Festival Mall TXT — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a703.jpg" data-lb><img src="/assets/loyihalar/albom/ta703.jpg" alt="Festival Mall TXT — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Festival Mall TXT" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a801.jpg" data-lb><img src="/assets/loyihalar/albom/ta801.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">8 renders</span></a>
+        <div class="np-tx"><h3>Residential complex</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a802.jpg" data-lb><img src="/assets/loyihalar/albom/ta802.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a803.jpg" data-lb><img src="/assets/loyihalar/albom/ta803.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a804.jpg" data-lb><img src="/assets/loyihalar/albom/ta804.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a805.jpg" data-lb><img src="/assets/loyihalar/albom/ta805.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a806.jpg" data-lb><img src="/assets/loyihalar/albom/ta806.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a807.jpg" data-lb><img src="/assets/loyihalar/albom/ta807.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a808.jpg" data-lb><img src="/assets/loyihalar/albom/ta808.jpg" alt="Residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Residential complex" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a401.jpg" data-lb><img src="/assets/loyihalar/albom/ta401.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">6 renders</span></a>
+        <div class="np-tx"><h3>Preschool</h3><p>Education</p><div class="np-th"><a href="/assets/loyihalar/albom/a402.jpg" data-lb><img src="/assets/loyihalar/albom/ta402.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a403.jpg" data-lb><img src="/assets/loyihalar/albom/ta403.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a404.jpg" data-lb><img src="/assets/loyihalar/albom/ta404.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a405.jpg" data-lb><img src="/assets/loyihalar/albom/ta405.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a406.jpg" data-lb><img src="/assets/loyihalar/albom/ta406.jpg" alt="Preschool — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Preschool" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a501.jpg" data-lb><img src="/assets/loyihalar/albom/ta501.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">8 renders</span></a>
+        <div class="np-tx"><h3>Low-rise residential complex</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a502.jpg" data-lb><img src="/assets/loyihalar/albom/ta502.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a503.jpg" data-lb><img src="/assets/loyihalar/albom/ta503.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a504.jpg" data-lb><img src="/assets/loyihalar/albom/ta504.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a505.jpg" data-lb><img src="/assets/loyihalar/albom/ta505.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a506.jpg" data-lb><img src="/assets/loyihalar/albom/ta506.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a507.jpg" data-lb><img src="/assets/loyihalar/albom/ta507.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a508.jpg" data-lb><img src="/assets/loyihalar/albom/ta508.jpg" alt="Low-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Low-rise residential complex" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a901.jpg" data-lb><img src="/assets/loyihalar/albom/ta901.jpg" alt="Office building — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">5 renders</span></a>
+        <div class="np-tx"><h3>Office building</h3><p>Office</p><div class="np-th"><a href="/assets/loyihalar/albom/a902.jpg" data-lb><img src="/assets/loyihalar/albom/ta902.jpg" alt="Office building — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a903.jpg" data-lb><img src="/assets/loyihalar/albom/ta903.jpg" alt="Office building — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a904.jpg" data-lb><img src="/assets/loyihalar/albom/ta904.jpg" alt="Office building — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a905.jpg" data-lb><img src="/assets/loyihalar/albom/ta905.jpg" alt="Office building — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Office building" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a1001.jpg" data-lb><img src="/assets/loyihalar/albom/ta1001.jpg" alt="Business center — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">4 renders</span></a>
+        <div class="np-tx"><h3>Business center</h3><p>Office</p><div class="np-th"><a href="/assets/loyihalar/albom/a1002.jpg" data-lb><img src="/assets/loyihalar/albom/ta1002.jpg" alt="Business center — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1003.jpg" data-lb><img src="/assets/loyihalar/albom/ta1003.jpg" alt="Business center — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1004.jpg" data-lb><img src="/assets/loyihalar/albom/ta1004.jpg" alt="Business center — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Business center" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a1101.jpg" data-lb><img src="/assets/loyihalar/albom/ta1101.jpg" alt="Multi-story residential building — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">3 renders</span></a>
+        <div class="np-tx"><h3>Multi-story residential building</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a1102.jpg" data-lb><img src="/assets/loyihalar/albom/ta1102.jpg" alt="Multi-story residential building — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1103.jpg" data-lb><img src="/assets/loyihalar/albom/ta1103.jpg" alt="Multi-story residential building — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Multi-story residential building" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a1201.jpg" data-lb><img src="/assets/loyihalar/albom/ta1201.jpg" alt="Residential buildings — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">3 renders</span></a>
+        <div class="np-tx"><h3>Residential buildings</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a1202.jpg" data-lb><img src="/assets/loyihalar/albom/ta1202.jpg" alt="Residential buildings — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1203.jpg" data-lb><img src="/assets/loyihalar/albom/ta1203.jpg" alt="Residential buildings — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Residential buildings" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a1301.jpg" data-lb><img src="/assets/loyihalar/albom/ta1301.jpg" alt="High-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">2 renders</span></a>
+        <div class="np-tx"><h3>High-rise residential complex</h3><p>Residential</p><div class="np-th"><a href="/assets/loyihalar/albom/a1302.jpg" data-lb><img src="/assets/loyihalar/albom/ta1302.jpg" alt="High-rise residential complex — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="High-rise residential complex" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
+      </article>
+      <article class="np">
+        <a class="np-cover" href="/assets/loyihalar/albom/a1401.jpg" data-lb><img src="/assets/loyihalar/albom/ta1401.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"><span class="np-n">9 renders</span></a>
+        <div class="np-tx"><h3>Bathroom interior</h3><p>Interior design</p><div class="np-th"><a href="/assets/loyihalar/albom/a1402.jpg" data-lb><img src="/assets/loyihalar/albom/ta1402.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1403.jpg" data-lb><img src="/assets/loyihalar/albom/ta1403.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1404.jpg" data-lb><img src="/assets/loyihalar/albom/ta1404.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1405.jpg" data-lb><img src="/assets/loyihalar/albom/ta1405.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1406.jpg" data-lb><img src="/assets/loyihalar/albom/ta1406.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1407.jpg" data-lb><img src="/assets/loyihalar/albom/ta1407.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1408.jpg" data-lb><img src="/assets/loyihalar/albom/ta1408.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a><a href="/assets/loyihalar/albom/a1409.jpg" data-lb><img src="/assets/loyihalar/albom/ta1409.jpg" alt="Bathroom interior — Ansor Loyiha" width="600" height="400" loading="lazy"></a></div><a class="pcta" data-ariza data-loyiha="Bathroom interior" href="https://t.me/ANSOR_LOYIHA_ADMIN">Order a similar project &rarr;</a></div>
       </article>
     </div>
   </div>
@@ -368,7 +378,14 @@
 </section>
 
 
-<section class="band">
+<section class="at-strip">
+  <div class="wrap at-wrap">
+    <div class="at-row">
+      <span class="at-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span>
+      <div class="at-tx"><b>AnsorTools</b><span>An Uzbek-language design plugin for AutoCAD</span></div>
+      <button type="button" class="ar-open">Learn more <em>AutoCAD</em></button>
+    </div>
+    <div class="ar-modal" hidden role="dialog" aria-modal="true" aria-label="AnsorTools"><div class="ar-box at-box light"><button type="button" class="ar-x" aria-label="Close">&times;</button>
   <div class="wrap split">
     <div>
       <p class="eyebrow" style="color:var(--gold)">AnsorTools</p>
@@ -383,6 +400,22 @@
       <a class="btn gold" href="/en/ansortools.html">Learn more</a>
     </div>
     <img class="shot" src="/assets/img/devor.png" alt="AnsorTools wall panel: wall type, alignment and snap buttons" width="560" height="230" loading="lazy">
+  </div>
+    </div></div>
+  </div>
+</section>
+
+<section id="nega">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Why us</p><h2>A reliable partner for your project</h2><p class="lead" style="margin-top:14px">One team is responsible from start to finish, so you don’t have to deal with the technical details.</p></div>
+    <div class="ng-grid">
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><h3>Personal specialist</h3><p>One dedicated specialist leads your project from start to finish.</p></div>
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h12M3 18h7"/><circle cx="18" cy="17" r="3"/></svg></span><h3>Clear plan</h3><p>Stages, deadlines and deliverables are agreed in advance.</p></div>
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4M8 9l3 3 5-5"/></svg></span><h3>Reporting</h3><p>After each stage you review and approve the drawings and 3D views.</p></div>
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Transparency</h3><p>Price and scope are fixed in the contract, with no surprise payments.</p></div>
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Code-compliant</h3><p>GOST and ShNQ requirements mean fewer review comments.</p></div>
+      <div class="ng"><span class="ng-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-5h6v5"/></svg></span><h3>Through construction</h3><p>Designer’s supervision: we keep answering questions on site.</p></div>
+    </div>
   </div>
 </section>
 
@@ -415,7 +448,17 @@
         <div class="ps-b"><div class="ps-get"><b>You receive</b><ul class="ps-ul"><li>Site visits</li><li>Answers to builders’ questions</li><li>Drawing revisions</li></ul></div><div class="ps-ex"><b>Example</b><p>If a window size or material changes on site, we quickly update the relevant drawings and schedules.</p></div></div>
       </li>
     </ol>
-    <div class="ps-cta"><p>Whatever stage your project is at, we can pick it up from there.</p><div><a class="btn gold" href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Message on Telegram</a><a class="btn ghost" href="tel:+998906023769">Call us</a></div></div>
+    <div class="ps-cta"><p>Whatever stage your project is at, we can pick it up from there.</p><div><a class="btn gold" href="https://t.me/ANSOR_LOYIHA_ADMIN" data-ariza target="_blank" rel="noopener">Message on Telegram</a><a class="btn ghost" href="tel:+998906023769">Call us</a></div></div>
+  </div>
+</section>
+
+<section id="ariza">
+  <div class="wrap az-wrap">
+    <div>
+      <p class="eyebrow">Request</p><h2 class="az-h">Let’s discuss your project</h2>
+      <ol class="az-steps"><li><em>01</em><b>Fill in the form</b><span>Leave your name and phone number.</span></li><li><em>02</em><b>We get in touch</b><span>Our specialist clarifies the brief and explains our approach.</span></li><li><em>03</em><b>Get a proposal</b><span>We prepare a proposal on scope, timeline and price.</span></li></ol>
+    </div>
+    <a class="btn gold az-open" data-ariza href="https://t.me/ANSOR_LOYIHA_ADMIN" target="_blank" rel="noopener">Send a request &rarr;</a>
   </div>
 </section>
 
@@ -423,7 +466,7 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Contact</p>
-      <h2>Let’s discuss your project</h2>
+      <h2>Get in touch</h2>
     </div>
     <div class="contact">
       <div class="card ct"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Phone</b><a href="tel:+998906023769">+998 90 602 37 69</a><a href="tel:+998990220400">+998 99 022 04 00</a></div></div>
@@ -440,6 +483,7 @@
   <div class="wrap">
     <img src="/assets/img/logo_oq.png" alt="Ansor Loyiha" width="48" height="40" style="height:40px;width:auto">
     <span>© 2026 Ansor Loyiha LLC. All rights reserved.</span>
+    <a href="/en/brend.html">Brand</a>
     <a href="/en/ansortools.html">AnsorTools</a>
   </div>
 </footer>
